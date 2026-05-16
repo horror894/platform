@@ -37,6 +37,8 @@ spec:
           image:
             repository: << inputs.image | quote >>
             tag: pr-<< inputs.id >>-<< inputs.sha | trunc 7 >>
+          imagePullSecrets:
+            - name: ghcr-auth
           replicas: << inputs.replicas >>
     # This Provider template holds the configuration for commenting on the pull requests.
     # A Provider is generated for each app repo and is shared for all PRs from that repo.
