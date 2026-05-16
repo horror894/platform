@@ -23,7 +23,7 @@ spec:
   sync:
     kind: GitRepository
     provider: github
-    url: "https://github.com/pull-request-wars-fluxcd/platform"
+    url: "https://github.com/horror894/platform"
     ref: "refs/heads/main"
     path: "kubernetes/clusters/local"
     pullSecret: github-app-auth
